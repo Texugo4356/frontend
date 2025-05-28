@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Paciente</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/detalhes.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Detalhes do Paciente</h1>
+
+        <table>
+            <tr><th>Nome</th><td>{{ paciente.nome }}</td></tr>
+            <tr><th>Data de Nascimento</th><td>{{ paciente.data_nasc }}</td></tr>
+            <tr><th>Sexo</th><td>{{ paciente.sexo }}</td></tr>
+            <tr><th>CPF</th><td>{{ paciente.cpf }}</td></tr>
+            <tr><th>Telefone</th><td>{{ paciente.tel }}</td></tr>
+            <tr><th>Email</th><td>{{ paciente.email }}</td></tr>
+            <tr><th>Estado Civil</th><td>{{ paciente.estado_civil }}</td></tr>
+            <tr><th>Nome da Mãe</th><td>{{ paciente.nome_mae }}</td></tr>
+            <tr><th>Nome do Pai</th><td>{{ paciente.nome_pai }}</td></tr>
+            <tr><th>Nacionalidade</th><td>{{ paciente.nacionalidade }}</td></tr>
+            <tr><th>Naturalidade</th><td>{{ paciente.naturalidade }}</td></tr>
+            <tr><th>Contato de Emergência</th><td>{{ paciente.contato_emergencia_nome }} ({{ paciente.contato_emergencia_parentesco }} - {{ paciente.contato_emergencia_telefone }})</td></tr>
+            <tr><th>Endereço</th><td>{{ paciente.endereco }}</td></tr>
+            <tr><th>CEP</th><td>{{ paciente.cep }}</td></tr>
+            <tr><th>Tipo Sanguíneo</th><td>{{ paciente.tipo_sanguineo }}</td></tr>
+            <tr><th>Alergias</th><td>{{ paciente.alergias }}</td></tr>
+            <tr><th>Doenças Crônicas</th><td>{{ paciente.doencas_cronicas }}</td></tr>
+            <tr><th>Medicamentos em Uso</th><td>{{ paciente.medicamentos_em_uso }}</td></tr>
+        </table>
+
+        <div class="actions">
+            <a class="btn" href="{{ url_for('dashboard') }}">Voltar</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Cuidador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body>
+    <div class="form">
+        <form method="POST">
+            <h1>Login</h1>
+            Email: <input type="text" name="email"><br>
+            Senha: <input type="password" name="senha"><br>
+            <button type="submit">Entrar</button>
+
+        </form>
+       <a class="cad" href="{{ url_for('cadastro_cuidador') }}">Cadastre-se</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Cuidador</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastro_cuidador.css') }}">
+</head>
+<body>
+
+
+    <div class="form">
+        <form method="POST" action="/cadastro_cuidador">
+            <h1>Cadastro de Cuidador</h1>
+            Nome: <input type="text" name="nome" required><br>
+            E-mail: <input type="email" name="email"><br>
+            Senha: <input type="password" name="senha"><br>
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <h4>Já possui conta?</h4>
+        <a class ="cad" href="{{ url_for('login') }}">Login</a>
+    </div>
+

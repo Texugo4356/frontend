@@ -1,0 +1,69 @@
+body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0b5ed7;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table th {
+    background-color: #3498db;
+    width: 30%;
+    font-weight: bold;
+}
+
+.actions {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn.editar {
+    background-color: #f1c40f;
+    color: #2c3e50;
+}
+
+.btn.excluir {
+    background-color: #e74c3c;
+}

@@ -1,0 +1,52 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Paciente</title>
+    <meta charset="UTF-8">
+
+    <!-- fazendo uma implementação com tag meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+
+</head>
+<body>
+    <!-- <h1>Cadastro de Paciente</h1> -->
+    <div class="form">
+    <form method="POST" action="/cadastrar">
+        <h1>Cadastro</h1>
+        Nome: <input type="text" name="nome_completo" required><br>
+        Data de nascimento: <input type="date" name="data_nascimento" required><br>
+        Telefone: <input type="text" name="telefone"><br>
+        Sexo:
+        <select name="sexo" required>
+            <option value="">Selecione</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+            <option value="O">Outro</option>
+        </select><br>
+        CPF: <input type="text" name="cpf" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" title="Formato esperado: 000.000.000-00"><br>
+        E-mail: <input type="email" name="email"><br>
+        Estado civil: <input type="text" name="est_civ"><br>
+        Nome Mãe: <input type="text" name="n_mae"><br>
+        Nome Pai: <input type="text" name="n_pai"><br>
+        Nacionalidade: <input type="text" name="nacic"><br>
+        Naturalidade: <input type="text" name="natu"><br>
+        Nome Contato de Emergência: <input type="text" name="n_cont_emr"><br>
+        Telefone Contato de Emergência: <input type="text" name="tel_cont_emr"><br>
+        Parentesco Contato de Emergência: <input type="text" name="paren_cont_emr"><br>
+        Endereço: <input type="text" name="end"><br>
+        CEP: <input type="text" name="cep"><br>
+        Tipo Sanguíneo: <input type="text" name="tp_sangue"><br>
+        Alergias: <input type="text" name="alergias"><br>
+        Doenças Crônicas: <input type="text" name="doen_cro"><br>
+        Medicamento em Uso: <input type="text" name="medic_uso"><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+
+ <a class= "btn" href="{{ url_for('dashboard') }}">Voltar</a>
+</div>
+</body>
+</html>
